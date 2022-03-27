@@ -53,3 +53,4 @@ jobs:
     - name: Who am I?
       run: |
         ./whoami.sh
+        ./whoami2.sh
