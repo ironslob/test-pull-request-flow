@@ -1,0 +1,24 @@
+name: curiosity killed the cat
+
+on:
+  push:
+    branches: [ master ]
+
+  pull_request:
+    branches: [ master ]
+
+jobs:
+
+  run_tests:
+    runs-on: ubuntu-18.04
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Where am I?
+      run: |
+        echo ${github}
+
+    - name: Who am I?
+      run: |
+        ./whoami.sh
