@@ -17,7 +17,7 @@ jobs:
 
     - name: Where am I?
       run: |
-        echo ${github}
+        echo ${{github}}
 
     - name: Who am I?
       run: |
